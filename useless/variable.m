@@ -39,31 +39,31 @@ elseif default == 0
     
 %     ohl_posR = 0.069/2;
 %     ohl_zeroR = 0.207/2;
-%     
-%     ohl_posInd = 0.001145916/2;
+%     %     ohl_posInd = 0.001145916/2;
 %     ohl_zeroInd = 0.00343775/2;
     
 %     ohl_posCap = 0.01e-006/2; 
 %     ohl_zeroCap = 0.003333e-006/2;
 
-    ohl_posR = 0.069/2;
-    ohl_zeroR = 0.207/2;
+    ohl_posR = 0.1153/2;
+    ohl_zeroR = 0.4138/2;
     
-    ohl_posInd = 0.001145916/2;
-    ohl_zeroInd = 0.00343775/2;
+    ohl_posInd = 1.05e-3/2;
+    ohl_zeroInd = 3.32e-3/2;
     
-    ohl_posCap = 11.33e-009; 
-    ohl_zeroCap = 5.01e-009;
+    ohl_posCap = 11.33e-009/2; 
+    ohl_zeroCap = 5.01e-009/2;
     
-    sum_posR = sub_posR + ohl_posR;
-    sum_zeroR = sub_zeroR + ohl_zeroR;
     
-    sum_posInd = sub_posInd + ohl_posInd;
-    sum_zeroInd = sub_zeroInd + ohl_zeroInd;
-    
-    sum_posCap = sub_posCap + ohl_posCap;
-    sum_zeroCap = sub_zeroCap + ohl_zeroCap;
-    
+%     sum_posR = sub_posR + ohl_posR;
+%     sum_zeroR = sub_zeroR + ohl_zeroR;
+%     
+%     sum_posInd = sub_posInd + ohl_posInd;
+%     sum_zeroInd = sub_zeroInd + ohl_zeroInd;
+%     
+%     sum_posCap = sub_posCap + ohl_posCap;
+%     sum_zeroCap = sub_zeroCap + ohl_zeroCap;
+%     
     
     transfo_R1 = 0.000866667;
     transfo_L1 = 0.05999374;
@@ -80,6 +80,8 @@ elseif default == 0
     
     feeder_posCap = 0.2e-006;
     feeder_zeroCap = 0.08;
+    
+    compensation = 11e3;
 end
     
 
