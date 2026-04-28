@@ -58,11 +58,11 @@ elseif default == 0
     ohl_posR = 0.1153/4;
     ohl_zeroR = 0.4138/4;
     
-    ohl_posInd = (1.05e-3)/4;
-    ohl_zeroInd = (3.32e-3)/4;
+    ohl_posInd = (1.05e-3)/2;
+    ohl_zeroInd = (3.32e-3)/2;
     
-    ohl_posCap = (11.33e-009)*4; 
-    ohl_zeroCap = (5e-009)*4;
+    ohl_posCap = (11.33e-009)*2; 
+    ohl_zeroCap = (5.01e-009)*2;
     
 %     ohl_posR = ohl_posR*5;
 %     ohl_zeroR = ohl_zeroR*5;
