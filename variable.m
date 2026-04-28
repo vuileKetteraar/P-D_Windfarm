@@ -75,7 +75,8 @@ elseif default == 0
     
     ohl_posCap = (0.00903e-009)*12; 
     ohl_zeroCap = (0.00542e-009)*12;
-    
+%12 kabels in parallel
+
     
     
     
