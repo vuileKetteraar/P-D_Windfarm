@@ -31,21 +31,28 @@ elseif default == 0
     sub_posR = 0.036;
     sub_zeroR = 0.09;
     
-    sub_posR = sub_posR/2;
-    sub_zeroR = sub_zeroR/2;
+    sub_posR = sub_posR/6;
+    sub_zeroR = sub_zeroR/6;
 
     sub_posInd = 0.0014;
     sub_zeroInd = 0.0035;
     
-    sub_posInd = sub_posInd/2;
-    sub_zeroInd = sub_zeroInd/2;
+    sub_posInd = sub_posInd/6;
+    sub_zeroInd = sub_zeroInd/6;
 
     sub_posCap = 0.16e-006;
     sub_zeroCap = 0.064e-006;
     
-    sub_posCap = sub_posCap*2;
-    sub_zeroCap = sub_zeroCap*2;
+    sub_posCap = sub_posCap*6;
+    sub_zeroCap = sub_zeroCap*6;
 
+    interPosR = 0.14;
+    interPosL = 0.0004;
+    interPosC = 0.2e-006;
+    
+    interZeroR = 0.42;
+    interZeroL = 0.001;
+    interZeroC = 0.08e-006;
     
 %     sub_posCap = 0.005e-006;
 %     sub_zeroCap = 0.0016e-006;
@@ -67,18 +74,26 @@ elseif default == 0
 %     ohl_posCap = (11.33e-009)*16; 
 %     ohl_zeroCap = (5e-009)*16;
     
-    ohl_posR = 0.0702/12;
-    ohl_zeroR = 0.2184/12;
-    
-    ohl_posInd = (1.2742e-3)/12;
-    ohl_zeroInd = (2.2385e-3)/12;
-    
-    ohl_posCap = (0.00903e-009)*12; 
-    ohl_zeroCap = (0.00542e-009)*12;
-%12 kabels in parallel
 
+%WAARDEN VAN GEMINI
+%     ohl_posR = 0.0702/12;
+%     ohl_zeroR = 0.2184/12;
+%     
+%     ohl_posInd = (1.2742e-3)/12;
+%     ohl_zeroInd = (2.2385e-3)/12;
+%     
+%     ohl_posCap = (0.00903e-009)*12; 
+%     ohl_zeroCap = (0.00542e-009)*12;
+%12 kabels in parallel
+%WAARDEN VAN DE EXCEL
+    ohl_posR = 0.069/12;
+    ohl_zeroR = 0.1725/12;
     
+    ohl_posInd = (1.15e-3)/12;
+    ohl_zeroInd = (2.86e-3)/12;
     
+    ohl_posCap = (0.01e-006)*12; 
+    ohl_zeroCap = (0.004e-006)*12;
     
 %     ohl_posR = ohl_posR*5;
 %     ohl_zeroR = ohl_zeroR*5;
@@ -101,7 +116,7 @@ elseif default == 0
 %     
     compensate_power = 2*pi*Vac^2*57*sub_posCap*50;
 %     sub_Ind = 40e6;
-    sub_Ind = compensate_power/2;
+    sub_Ind = compensate_power;
     sub_Cap = 0;
     
     ohl_Ind = 0;
@@ -124,7 +139,7 @@ elseif default == 0
     feeder_posCap = 0.2e-006;
     feeder_zeroCap = 0.08;
     
-    compensation = 11e3;
+%     compensation = 11e3;
 end
     
 
