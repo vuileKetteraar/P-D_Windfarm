@@ -46,13 +46,13 @@ elseif default == 0
     sub_posCap = sub_posCap*6;
     sub_zeroCap = sub_zeroCap*6;
 
-    interPosR = 0.14;
-    interPosL = 0.0004;
-    interPosC = 0.2e-006;
+    interPosR = 0.036;
+    interPosL = 0.0014;
+    interPosC = 0.16e-006;
     
-    interZeroR = 0.42;
-    interZeroL = 0.001;
-    interZeroC = 0.08e-006;
+    interZeroR = 0.09;
+    interZeroL = 0.0035;
+    interZeroC = 0.064e-006;
     
 %     sub_posCap = 0.005e-006;
 %     sub_zeroCap = 0.0016e-006;
