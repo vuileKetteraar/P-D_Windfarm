@@ -1,0 +1,6135 @@
+Model {
+  Name			  "relaying"
+  Version		  8.5
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.2"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  on
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [292.0, 52.0, 556.0, 485.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[8]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[506.0, 310.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "Thu Aug 19 22:52:50 1999"
+  Creator		  "PC"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "PC"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Sep 29 19:49:27 2016"
+  RTWModifiedTimeStamp	  397079365
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "relaying"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "relaying"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  CovSFcnEnable		  on
+  CovBoundaryAbsTol	  0.000010
+  CovBoundaryRelTol	  0.010000
+  CovUseTimeInterval	  off
+  CovStartTime		  0
+  CovStopTime		  0
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.15.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.15.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.15.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.15.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  128
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.15.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "None"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  IntegerSaturationMsg	  "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.15.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.15.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.15.0"
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.15.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.15.0"
+	      Array {
+		Type			"Cell"
+		Dimension		24
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"ParameterTuningSideEffectCode"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.15.0"
+	      Array {
+		Type			"Cell"
+		Dimension		13
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      GenerateSharedConstants on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 420, 220, 1500, 860 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    18
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+      EnableBusSupport	      off
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      ShowLegends	      off
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+      ScrollMode	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      ContinuousStateAttributes	"''"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  System {
+    Name		    "relaying"
+    Location		    [292, 52, 848, 537]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "186"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Protective Relays1"
+      SID		      "1"
+      Ports		      [3, 1]
+      Position		      [285, 44, 350, 136]
+      ZOrder		      -1
+      BackgroundColor	      "darkGreen"
+      RequestExecContextInheritance off
+      System {
+	Name			"Protective Relays1"
+	Location		[292, 52, 848, 537]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IABC"
+	  SID			  "2"
+	  Position		  [25, 113, 55, 127]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "I0"
+	  SID			  "3"
+	  Position		  [25, 143, 55, 157]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vline"
+	  SID			  "4"
+	  Position		  [30, 258, 60, 272]
+	  ZOrder		  -3
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Directional\nProtection"
+	  SID			  "5"
+	  Ports			  [2, 1]
+	  Position		  [135, 219, 230, 281]
+	  ZOrder		  -4
+	  DropShadow		  on
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    19
+	    $ClassName		    "Simulink.Mask"
+	    Type		    "Directional Elements"
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      2
+	      Object {
+		$ObjectID		20
+		Type			"edit"
+		Name			"AA"
+		Prompt			"Angle alpha (deg)"
+		Value			"-60"
+	      }
+	      Object {
+		$ObjectID		21
+		Type			"edit"
+		Name			"AB"
+		Prompt			"Angle Beta (deg)"
+		Value			"120"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	  System {
+	    Name		    "Directional\nProtection"
+	    Location		    [173, 180, 700, 745]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IABC"
+	      SID		      "6"
+	      Position		      [15, 123, 45, 137]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Vline"
+	      SID		      "7"
+	      Position		      [15, 223, 45, 237]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "  VAB-IC"
+	      SID		      "8"
+	      Ports		      [2, 1]
+	      Position		      [210, 47, 265, 103]
+	      ZOrder		      -3
+	      BackgroundColor	      "yellow"
+	      NamePlacement	      "alternate"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		22
+		$ClassName		"Simulink.Mask"
+		Type			"Directional Element 1"
+		Description		"This block has two phasor inputs: voltage and current. The operating characteristic is defined by two "
+		"angles. The output is 1 when the current phasor falls into the operating characteristic."
+		Help			"web(['file:///' which('zc.html')]);\n\n"
+		Initialization		"DE_11;\n"
+		Display			"plot([0.2 0.8],[0.5 0.5],[0.5 0.6],[0.5 0.8],[0.5,xalpha],[0.5,yalpha],[0.5,xbeta],[0.5,ybeta]);\n\n\n\n\n\n\n \n\n"
+		IconOpaque		"off"
+		IconUnits		"normalized"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  3
+		  Object {
+		    $ObjectID		    23
+		    Type		    "edit"
+		    Name		    "alpha"
+		    Prompt		    "Angle alpha [deg]"
+		    Value		    "AA"
+		  }
+		  Object {
+		    $ObjectID		    24
+		    Type		    "edit"
+		    Name		    "beta"
+		    Prompt		    "Angle Beta [deg]"
+		    Value		    "AB"
+		  }
+		  Object {
+		    $ObjectID		    25
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frecuency (Hz):"
+		    Value		    "40*60"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"  VAB-IC"
+		Location		[233, 52, 938, 835]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "V"
+		  SID			  "9"
+		  Position		  [150, 80, 185, 100]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "I"
+		  SID			  "10"
+		  Position		  [150, 160, 185, 180]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "11"
+		  Ports			  [2, 1]
+		  Position		  [225, 117, 260, 153]
+		  ZOrder		  -3
+		  Inputs		  "2"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "S-Function"
+		  SID			  "12"
+		  Ports			  [1, 1]
+		  Position		  [285, 120, 345, 150]
+		  ZOrder		  -4
+		  FunctionName		  "DE_12"
+		  Parameters		  "alpha,beta,fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dir"
+		  SID			  "13"
+		  Position		  [365, 125, 385, 145]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "S-Function"
+		  SrcPort		  1
+		  DstBlock		  "dir"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "S-Function"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "V"
+		  SrcPort		  1
+		  Points		  [0, 35]
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "I"
+		  SrcPort		  1
+		  Points		  [0, -25]
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "  VBC-IA"
+	      SID		      "14"
+	      Ports		      [2, 1]
+	      Position		      [210, 182, 265, 238]
+	      ZOrder		      -4
+	      BackgroundColor	      "yellow"
+	      NamePlacement	      "alternate"
+	      SourceBlock	      "ELEMENTS/  DE_1"
+	      SourceType	      "Directional Element 1"
+	      alpha		      "AA"
+	      beta		      "AB"
+	      fs		      "40*60"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "  VCA-IB"
+	      SID		      "15"
+	      Ports		      [2, 1]
+	      Position		      [210, 292, 265, 348]
+	      ZOrder		      -5
+	      BackgroundColor	      "yellow"
+	      NamePlacement	      "alternate"
+	      SourceBlock	      "ELEMENTS/  DE_1"
+	      SourceType	      "Directional Element 1"
+	      alpha		      "AA"
+	      beta		      "AB"
+	      fs		      "40*60"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "16"
+	      Ports		      [1, 3]
+	      Position		      [85, 112, 120, 148]
+	      ZOrder		      -6
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux1"
+	      SID		      "17"
+	      Ports		      [1, 3]
+	      Position		      [85, 212, 120, 248]
+	      ZOrder		      -7
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      SID		      "18"
+	      Ports		      [3, 1]
+	      Position		      [350, 194, 380, 226]
+	      ZOrder		      -8
+	      Operator		      "OR"
+	      Inputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Trip A"
+	      SID		      "19"
+	      Ports		      [1]
+	      Position		      [290, 225, 320, 255]
+	      ZOrder		      -9
+	      Floating		      off
+	      Location		      [663, 30, 987, 269]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      YMin		      "-1              "
+	      YMax		      "1               "
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Trip B"
+	      SID		      "20"
+	      Ports		      [1]
+	      Position		      [295, 330, 325, 360]
+	      ZOrder		      -10
+	      Floating		      off
+	      Location		      [666, 265, 990, 504]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      YMin		      "-1              "
+	      YMax		      "1               "
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Trip C"
+	      SID		      "21"
+	      Ports		      [1]
+	      Position		      [305, 60, 335, 90]
+	      ZOrder		      -11
+	      Floating		      off
+	      Location		      [667, 501, 990, 737]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      YMin		      "-1              "
+	      YMax		      "1               "
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Trip ABC-DIR"
+	      SID		      "22"
+	      Position		      [400, 203, 430, 217]
+	      ZOrder		      -12
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "  VAB-IC"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		ZOrder			2
+		Points			[0, 125]
+		DstBlock		"Logical\nOperator"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			3
+		DstBlock		"Trip C"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      4
+	      Labels		      [1, 0]
+	      SrcBlock		      "  VCA-IB"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		ZOrder			5
+		Points			[60, 0]
+		DstBlock		"Logical\nOperator"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			6
+		Points			[0, 25]
+		DstBlock		"Trip B"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Demux1"
+	      SrcPort		      3
+	      Points		      [55, 0; 0, 65]
+	      DstBlock		      "  VCA-IB"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      Points		      [25, 0; 0, 205]
+	      DstBlock		      "  VCA-IB"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Demux1"
+	      SrcPort		      1
+	      Points		      [40, 0; 0, -160]
+	      DstBlock		      "  VAB-IC"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [55, 0; 0, -50]
+	      DstBlock		      "  VAB-IC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Demux1"
+	      SrcPort		      2
+	      Points		      [55, 0; 0, -35]
+	      DstBlock		      "  VBC-IA"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [70, 0]
+	      DstBlock		      "  VBC-IA"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "Vline"
+	      SrcPort		      1
+	      DstBlock		      "Demux1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "IABC"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Trip ABC-DIR"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "  VBC-IA"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		ZOrder			17
+		DstBlock		"Logical\nOperator"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			18
+		DstBlock		"Trip A"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Logic"
+	  SID			  "23"
+	  Ports			  [3, 1]
+	  Position		  [320, 120, 390, 180]
+	  ZOrder		  -5
+	  BackgroundColor	  "orange"
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Logic"
+	    Location		    [337, 188, 748, 568]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Time"
+	      SID		      "24"
+	      Position		      [60, 48, 90, 62]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Residual"
+	      SID		      "25"
+	      Position		      [60, 83, 90, 97]
+	      ZOrder		      -2
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Directional"
+	      SID		      "26"
+	      Position		      [60, 118, 90, 132]
+	      ZOrder		      -3
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      SID		      "27"
+	      Ports		      [3, 1]
+	      Position		      [170, 74, 200, 106]
+	      ZOrder		      -4
+	      Operator		      "OR"
+	      Inputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Trip"
+	      SID		      "28"
+	      Position		      [240, 85, 270, 95]
+	      ZOrder		      -5
+	      NamePlacement	      "alternate"
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Directional"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Trip"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Time"
+	      SrcPort		      1
+	      Points		      [60, 0]
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Residual"
+	      SrcPort		      1
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Residual\nProtection"
+	  SID			  "29"
+	  Ports			  [1, 1]
+	  Position		  [135, 125, 225, 175]
+	  ZOrder		  -6
+	  DropShadow		  on
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Residual\nProtection"
+	    Location		    [205, 209, 667, 758]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "I0"
+	      SID		      "30"
+	      Position		      [20, 123, 50, 137]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux1"
+	      SID		      "31"
+	      Ports		      [1, 2]
+	      Position		      [85, 112, 120, 148]
+	      ZOrder		      -2
+	      Outputs		      "2"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "UC1"
+	      SID		      "32"
+	      Ports		      [2, 1]
+	      Position		      [175, 100, 235, 160]
+	      ZOrder		      -3
+	      BackgroundColor	      "yellow"
+	      SourceBlock	      "ELEMENTS/UC"
+	      SourceType	      "Universal Comparator"
+	      type0		      "Signal-Time"
+	      sign		      "<"
+	      Ipickup		      "1.5"
+	      k1		      "1"
+	      type1		      "RI Inverse"
+	      type3		      "integration"
+	      k			      "0.05"
+	      fs		      "40*60"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Trip \nABC-RES"
+	      SID		      "33"
+	      Position		      [280, 123, 310, 137]
+	      ZOrder		      -4
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "UC1"
+	      SrcPort		      1
+	      DstBlock		      "Trip \nABC-RES"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Demux1"
+	      SrcPort		      2
+	      Points		      [35, 0]
+	      DstBlock		      "UC1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Demux1"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      DstBlock		      "UC1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "I0"
+	      SrcPort		      1
+	      DstBlock		      "Demux1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Time Overcurrent\nProtection"
+	  SID			  "34"
+	  Ports			  [1, 1]
+	  Position		  [135, 29, 225, 81]
+	  ZOrder		  -7
+	  DropShadow		  on
+	  RequestExecContextInheritance	off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    26
+	    $ClassName		    "Simulink.Mask"
+	    Type		    "Overcurrent Protection"
+	    Initialization	    "switch typed\ncase 1,\n   string='Time defined';\ncase 2,\n   string='Standard Inverse';\ncas"
+	    "e 3,\n   string='Very Inverse';\ncase 4,\n   string='Extra Inverse';\ncase 5,\n   string='RI Inverse';\ncase 6,\n"
+	    "   string='Long Time Inverse';\nend;\nset_param('systemtotal/Protective Relays/Time Overcurrent Protection/UC1',."
+	    "..\n   'Type1',string);\nset_param('systemtotal/Protective Relays/Time Overcurrent Protection/UC2',...\n   'Type1"
+	    "',string);\nset_param('systemtotal/Protective Relays/Time Overcurrent Protection/UC3',...\n   'Type1',string);\n"
+	    Array {
+	      Type		      "Simulink.MaskParameter"
+	      Dimension		      3
+	      Object {
+		$ObjectID		27
+		Type			"popup"
+		Array {
+		  Type			  "Cell"
+		  Dimension		  6
+		  Cell			  "Time defined"
+		  Cell			  "Standard Inverse"
+		  Cell			  "Very Inverse"
+		  Cell			  "Extra Inverse"
+		  Cell			  "RI Inverse"
+		  Cell			  "Long Time Inverse"
+		  PropName		  "TypeOptions"
+		}
+		Name			"typed"
+		Prompt			"Type of time dependency"
+		Value			"Very Inverse"
+	      }
+	      Object {
+		$ObjectID		28
+		Type			"edit"
+		Name			"Pick"
+		Prompt			"Pickup value:"
+		Value			"1.5"
+	      }
+	      Object {
+		$ObjectID		29
+		Type			"edit"
+		Name			"k"
+		Prompt			"Time parameter (seconds):"
+		Value			"0.05"
+	      }
+	      PropName		      "Parameters"
+	    }
+	  }
+	  System {
+	    Name		    "Time Overcurrent\nProtection"
+	    Location		    [172, 52, 922, 796]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IABC"
+	      SID		      "35"
+	      Position		      [165, 302, 195, 318]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "36"
+	      Ports		      [1, 3]
+	      Position		      [220, 292, 255, 328]
+	      ZOrder		      -2
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux1"
+	      SID		      "37"
+	      Ports		      [1, 2]
+	      Position		      [290, 187, 325, 223]
+	      ZOrder		      -3
+	      Outputs		      "2"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux2"
+	      SID		      "38"
+	      Ports		      [1, 2]
+	      Position		      [290, 292, 325, 328]
+	      ZOrder		      -4
+	      Outputs		      "2"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux3"
+	      SID		      "39"
+	      Ports		      [1, 2]
+	      Position		      [295, 407, 330, 443]
+	      ZOrder		      -5
+	      Outputs		      "2"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator2"
+	      SID		      "40"
+	      Ports		      [3, 1]
+	      Position		      [540, 289, 570, 321]
+	      ZOrder		      -6
+	      Operator		      "OR"
+	      Inputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Phase current A\nAmplitude"
+	      SID		      "41"
+	      Ports		      [1]
+	      Position		      [460, 140, 490, 170]
+	      ZOrder		      -7
+	      Floating		      off
+	      Location		      [10, 30, 334, 269]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      YMin		      "-1"
+	      YMax		      "1.25"
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Phase current B\nAmplitude"
+	      SID		      "42"
+	      Ports		      [1]
+	      Position		      [455, 250, 485, 280]
+	      ZOrder		      -8
+	      Floating		      off
+	      Location		      [8, 238, 332, 477]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      TimeRange		      "0.2"
+	      YMin		      "-1.25"
+	      YMax		      "1.25"
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Phase current C\nAmplitude"
+	      SID		      "43"
+	      Ports		      [1]
+	      Position		      [460, 365, 490, 395]
+	      ZOrder		      -9
+	      Floating		      off
+	      Location		      [7, 496, 331, 735]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      TimeRange		      "0.2"
+	      YMin		      "-20"
+	      YMax		      "30"
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Trip A"
+	      SID		      "44"
+	      Ports		      [1]
+	      Position		      [465, 200, 495, 230]
+	      ZOrder		      -10
+	      Floating		      off
+	      Location		      [340, 30, 666, 263]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      YMin		      "0               "
+	      YMax		      "1               "
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Trip B"
+	      SID		      "45"
+	      Ports		      [1]
+	      Position		      [460, 315, 490, 345]
+	      ZOrder		      -11
+	      Floating		      off
+	      Location		      [341, 252, 665, 491]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      YMin		      "0               "
+	      YMax		      "1               "
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Trip C"
+	      SID		      "46"
+	      Ports		      [1]
+	      Position		      [455, 425, 485, 455]
+	      ZOrder		      -12
+	      Floating		      off
+	      Location		      [341, 488, 665, 727]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      TickLabels	      "on"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      YMin		      "0               "
+	      YMax		      "1               "
+	      LimitDataPoints	      off
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "UC1"
+	      SID		      "47"
+	      Ports		      [2, 1]
+	      Position		      [370, 170, 430, 230]
+	      ZOrder		      -13
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		30
+		$ClassName		"Simulink.Mask"
+		Type			"Universal Comparator"
+		Description		"This block is fed by two signals and does comparisons of three types: signal-to-signal, signal-to-thre"
+		"shold and signal-to-time. The options include the sign of the comparison, pick-up to re-set ratio, and the way of em"
+		"ulating the steady-state current characteristic."
+		Help			"web(['file:///' which('uc.html')]);\n\n"
+		Initialization		"\nuc0;\n"
+		Display			"disp(icon);\nplot(current,time);\n"
+		IconOpaque		"off"
+		IconRotate		"port"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  8
+		  Object {
+		    $ObjectID		    31
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Signal-Threshold"
+		    Cell		    "Signal-Signal"
+		    Cell		    "Signal-Time"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "type0"
+		    Prompt		    "Type of comparison"
+		    Value		    "Signal-Time"
+		  }
+		  Object {
+		    $ObjectID		    32
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    ">"
+		    Cell		    "<"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "sign"
+		    Prompt		    "Sign"
+		    Value		    "<"
+		  }
+		  Object {
+		    $ObjectID		    33
+		    Type		    "edit"
+		    Name		    "Ipickup"
+		    Prompt		    "Pick-up value:"
+		    Value		    "Pick"
+		  }
+		  Object {
+		    $ObjectID		    34
+		    Type		    "edit"
+		    Name		    "k1"
+		    Prompt		    "Ratio of reset to pick-up:"
+		    Value		    "1"
+		  }
+		  Object {
+		    $ObjectID		    35
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    6
+		    Cell		    "Time defined"
+		    Cell		    "Standard Inverse"
+		    Cell		    "Very Inverse"
+		    Cell		    "Extra Inverse"
+		    Cell		    "RI Inverse"
+		    Cell		    "Long Time Inverse"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "type1"
+		    Prompt		    "Type of Time dependency"
+		    Value		    "Very Inverse"
+		  }
+		  Object {
+		    $ObjectID		    36
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "Present value"
+		    Cell		    "integration"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "type3"
+		    Prompt		    "I-t emulation method"
+		    Value		    "integration"
+		  }
+		  Object {
+		    $ObjectID		    37
+		    Type		    "edit"
+		    Name		    "k"
+		    Prompt		    "Time parameter (seconds):"
+		    Value		    "k"
+		  }
+		  Object {
+		    $ObjectID		    38
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frequency (Hz):"
+		    Value		    "40*60"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"UC1"
+		Location		[17, 125, 722, 858]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "S1"
+		  SID			  "48"
+		  Position		  [150, 100, 185, 120]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "S2"
+		  SID			  "49"
+		  Position		  [145, 145, 180, 165]
+		  ZOrder		  -2
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  SID			  "50"
+		  Ports			  [2, 1]
+		  Position		  [230, 117, 265, 153]
+		  ZOrder		  -3
+		  Inputs		  "2"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "S-Function"
+		  SID			  "51"
+		  Ports			  [1, 1]
+		  Position		  [285, 120, 345, 150]
+		  ZOrder		  -4
+		  FunctionName		  "uc1"
+		  Parameters		  "k,k1,aux,Ipickup,fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "C"
+		  SID			  "52"
+		  Position		  [380, 125, 400, 145]
+		  ZOrder		  -5
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "S2"
+		  SrcPort		  1
+		  Points		  [20, 0; 0, -10]
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "S1"
+		  SrcPort		  1
+		  Points		  [15, 0; 0, 15]
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  "S-Function"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "S-Function"
+		  SrcPort		  1
+		  DstBlock		  "C"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "UC2"
+	      SID		      "53"
+	      Ports		      [2, 1]
+	      Position		      [370, 275, 430, 335]
+	      ZOrder		      -14
+	      BackgroundColor	      "yellow"
+	      SourceBlock	      "ELEMENTS/UC"
+	      SourceType	      "Universal Comparator"
+	      type0		      "Signal-Time"
+	      sign		      "<"
+	      Ipickup		      "Pick"
+	      k1		      "1"
+	      type1		      "Very Inverse"
+	      type3		      "integration"
+	      k			      "k"
+	      fs		      "40*60"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "UC3"
+	      SID		      "54"
+	      Ports		      [2, 1]
+	      Position		      [370, 390, 430, 450]
+	      ZOrder		      -15
+	      BackgroundColor	      "yellow"
+	      SourceBlock	      "ELEMENTS/UC"
+	      SourceType	      "Universal Comparator"
+	      type0		      "Signal-Time"
+	      sign		      "<"
+	      Ipickup		      "Pick"
+	      k1		      "1"
+	      type1		      "Very Inverse"
+	      type3		      "integration"
+	      k			      "k"
+	      fs		      "40*60"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Trip ABC-IT"
+	      SID		      "55"
+	      Position		      [590, 298, 620, 312]
+	      ZOrder		      -16
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "UC1"
+	      SrcPort		      1
+	      Points		      [0, -5; 10, 0]
+	      Branch {
+		ZOrder			2
+		Points			[0, 20]
+		DstBlock		"Trip A"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			3
+		Labels			[1, 0]
+		Points			[65, 0; 0, 100]
+		DstBlock		"Logical\nOperator2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "IABC"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [20, 0]
+	      DstBlock		      "Demux3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      DstBlock		      "Demux1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "Demux2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Logical\nOperator2"
+	      SrcPort		      1
+	      DstBlock		      "Trip ABC-IT"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Demux3"
+	      SrcPort		      2
+	      DstBlock		      "UC3"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Demux2"
+	      SrcPort		      2
+	      DstBlock		      "UC2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Demux1"
+	      SrcPort		      2
+	      DstBlock		      "UC1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "UC3"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		ZOrder			13
+		Points			[70, 0; 0, -105]
+		DstBlock		"Logical\nOperator2"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			14
+		DstBlock		"Trip C"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "UC2"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		ZOrder			16
+		DstBlock		"Logical\nOperator2"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			17
+		DstBlock		"Trip B"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "Demux3"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      Branch {
+		ZOrder			19
+		Points			[0, -35]
+		DstBlock		"Phase current C\nAmplitude"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			20
+		Points			[0, -10]
+		DstBlock		"UC3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      "Demux2"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      Branch {
+		ZOrder			22
+		Points			[0, -35]
+		DstBlock		"Phase current B\nAmplitude"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			23
+		Points			[0, -10]
+		DstBlock		"UC2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      24
+	      SrcBlock		      "Demux1"
+	      SrcPort		      1
+	      Points		      [0, -40]
+	      Branch {
+		ZOrder			25
+		DstBlock		"Phase current A\nAmplitude"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			26
+		Points			[0, 30]
+		DstBlock		"UC1"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Trip ABC-DIR"
+	  SID			  "56"
+	  Ports			  [1]
+	  Position		  [260, 260, 290, 290]
+	  ZOrder		  -8
+	  Floating		  off
+	  Location		  [670, 21, 994, 260]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "-1"
+	  YMax			  "1"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Trip ABC-IT"
+	  SID			  "57"
+	  Ports			  [1]
+	  Position		  [260, 40, 290, 70]
+	  ZOrder		  -9
+	  Floating		  off
+	  Location		  [670, 272, 995, 511]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "-1"
+	  YMax			  "1"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Trip ABC-RES"
+	  SID			  "58"
+	  Ports			  [1]
+	  Position		  [255, 160, 285, 190]
+	  ZOrder		  -10
+	  Floating		  off
+	  Location		  [670, 499, 996, 735]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  TickLabels		  "on"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "-1"
+	  YMax			  "1"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "TRIP"
+	  SID			  "59"
+	  Position		  [415, 143, 445, 157]
+	  ZOrder		  -11
+	  IconDisplay		  "Port number"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Vline"
+	  SrcPort		  1
+	  DstBlock		  "Directional\nProtection"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "I0"
+	  SrcPort		  1
+	  DstBlock		  "Residual\nProtection"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Logic"
+	  SrcPort		  1
+	  DstBlock		  "TRIP"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Directional\nProtection"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    ZOrder		    5
+	    Points		    [65, 0]
+	    DstBlock		    "Logic"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    6
+	    Points		    [0, 25]
+	    DstBlock		    "Trip ABC-DIR"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Time Overcurrent\nProtection"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    ZOrder		    8
+	    Points		    [0, 75]
+	    DstBlock		    "Logic"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    9
+	    DstBlock		    "Trip ABC-IT"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Residual\nProtection"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    ZOrder		    11
+	    DstBlock		    "Logic"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    12
+	    Points		    [0, 25]
+	    DstBlock		    "Trip ABC-RES"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "IABC"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  Branch {
+	    ZOrder		    14
+	    Points		    [0, 115]
+	    DstBlock		    "Directional\nProtection"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    15
+	    Points		    [0, -65]
+	    DstBlock		    "Time Overcurrent\nProtection"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Signal Processinng"
+      SID		      "60"
+      Ports		      [2, 3]
+      Position		      [110, 45, 185, 135]
+      ZOrder		      -2
+      BackgroundColor	      "green"
+      RequestExecContextInheritance off
+      System {
+	Name			"Signal Processinng"
+	Location		[292, 52, 848, 537]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IABC,sec"
+	  SID			  "61"
+	  Position		  [25, 53, 55, 67]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VABC,sec"
+	  SID			  "62"
+	  Position		  [25, 168, 55, 182]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "DAB+OC I"
+	  SID			  "63"
+	  Ports			  [1, 2]
+	  Position		  [90, 29, 140, 91]
+	  ZOrder		  -3
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "DAB+OC I"
+	    Location		    [407, 288, 931, 748]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "IABC,sec"
+	      SID		      "64"
+	      Position		      [25, 98, 55, 112]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "DAB"
+	      SID		      "65"
+	      Ports		      [1, 1]
+	      Position		      [155, 31, 200, 59]
+	      ZOrder		      -2
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		39
+		$ClassName		"Simulink.Mask"
+		Type			"Data Adquisition Board"
+		Description		"Performs analog filtering, signal conditioning and sampling. A single signal is the input, a buffer wi"
+		"th the signal samples is the output. The options include analog filter enable/disable switch, type, order and cut-of"
+		"f frequency of the analog filter, conditioning gain, sampling frequency, number of bits, the length of the buffer."
+		Help			"web(['file:///' which('dab.html')]);"
+		Initialization		"dab1"
+		Display			"disp('DAB')"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  12
+		  Object {
+		    $ObjectID		    40
+		    Type		    "checkbox"
+		    Name		    "filter"
+		    Prompt		    "Disable Analog Filter"
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    41
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    4
+		    Cell		    "Bessel"
+		    Cell		    "Tschebyscheff"
+		    Cell		    "Butterworth"
+		    Cell		    "free expression"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "approx"
+		    Prompt		    "Filter approximation"
+		    Value		    "Bessel"
+		  }
+		  Object {
+		    $ObjectID		    42
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "2"
+		    Cell		    "3"
+		    Cell		    "4"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "order"
+		    Prompt		    "Order"
+		    Value		    "2"
+		  }
+		  Object {
+		    $ObjectID		    43
+		    Type		    "edit"
+		    Name		    "numerator"
+		    Prompt		    "Free expression filter: numerator(descending order of s)"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    44
+		    Type		    "edit"
+		    Name		    "denominator"
+		    Prompt		    "Free expression filter: denominator:"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    45
+		    Type		    "edit"
+		    Name		    "freq"
+		    Prompt		    "Cut-off frequency"
+		    Value		    "180"
+		  }
+		  Object {
+		    $ObjectID		    46
+		    Type		    "checkbox"
+		    Name		    "resdis"
+		    Prompt		    "Disable Vertical Resolution "
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    47
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "8"
+		    Cell		    "12"
+		    Cell		    "16"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "vertres"
+		    Prompt		    "Vertical Resolution: No. of bits"
+		    Value		    "12"
+		  }
+		  Object {
+		    $ObjectID		    48
+		    Type		    "edit"
+		    Name		    "xmax"
+		    Prompt		    "Vertical Resolution: signal range"
+		    Value		    "10"
+		  }
+		  Object {
+		    $ObjectID		    49
+		    Type		    "edit"
+		    Name		    "winsize"
+		    Prompt		    "Window size"
+		    Value		    "40"
+		  }
+		  Object {
+		    $ObjectID		    50
+		    Type		    "edit"
+		    Name		    "G"
+		    Prompt		    "Gain"
+		    Value		    "1.0"
+		  }
+		  Object {
+		    $ObjectID		    51
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frequency"
+		    Value		    "60*40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"DAB"
+		Location		[16, 52, 876, 793]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "a"
+		  SID			  "66"
+		  Position		  [15, 78, 45, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "A-D & Buffer"
+		  SID			  "67"
+		  Ports			  [1, 1]
+		  Position		  [275, 70, 335, 100]
+		  ZOrder		  -2
+		  FunctionName		  "dab2"
+		  Parameters		  "winsize,fs,dx,resdis"
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Analog Filter"
+		  SID			  "68"
+		  Position		  [70, 67, 125, 103]
+		  ZOrder		  -3
+		  Numerator		  "num"
+		  Denominator		  "den"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "69"
+		  Position		  [145, 70, 175, 100]
+		  ZOrder		  -4
+		  Gain			  "G"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold"
+		  SID			  "70"
+		  Position		  [210, 70, 240, 100]
+		  ZOrder		  -5
+		  SampleTime		  "1/fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "d"
+		  SID			  "71"
+		  Position		  [360, 78, 390, 92]
+		  ZOrder		  -6
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "[zeros(winsize,1)]"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "A-D & Buffer"
+		  SrcPort		  1
+		  DstBlock		  "d"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "a"
+		  SrcPort		  1
+		  DstBlock		  "Analog Filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Zero-Order\nHold"
+		  SrcPort		  1
+		  DstBlock		  "A-D & Buffer"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Analog Filter"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "DAB1"
+	      SID		      "72"
+	      Ports		      [1, 1]
+	      Position		      [155, 91, 200, 119]
+	      ZOrder		      -3
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		52
+		$ClassName		"Simulink.Mask"
+		Type			"Data Adquisition Board"
+		Description		"Performs analog filtering, signal conditioning and sampling. A single signal is the input, a buffer wi"
+		"th the signal samples is the output. The options include analog filter enable/disable switch, type, order and cut-of"
+		"f frequency of the analog filter, conditioning gain, sampling frequency, number of bits, the length of the buffer."
+		Help			"web(['file:///' which('dab.html')]);"
+		Initialization		"dab1"
+		Display			"disp('DAB')"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  12
+		  Object {
+		    $ObjectID		    53
+		    Type		    "checkbox"
+		    Name		    "filter"
+		    Prompt		    "Disable Analog Filter"
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    54
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    4
+		    Cell		    "Bessel"
+		    Cell		    "Tschebyscheff"
+		    Cell		    "Butterworth"
+		    Cell		    "free expression"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "approx"
+		    Prompt		    "Filter approximation"
+		    Value		    "Bessel"
+		  }
+		  Object {
+		    $ObjectID		    55
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "2"
+		    Cell		    "3"
+		    Cell		    "4"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "order"
+		    Prompt		    "Order"
+		    Value		    "2"
+		  }
+		  Object {
+		    $ObjectID		    56
+		    Type		    "edit"
+		    Name		    "numerator"
+		    Prompt		    "Free expression filter: numerator(descending order of s)"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    57
+		    Type		    "edit"
+		    Name		    "denominator"
+		    Prompt		    "Free expression filter: denominator:"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    58
+		    Type		    "edit"
+		    Name		    "freq"
+		    Prompt		    "Cut-off frequency"
+		    Value		    "180"
+		  }
+		  Object {
+		    $ObjectID		    59
+		    Type		    "checkbox"
+		    Name		    "resdis"
+		    Prompt		    "Disable Vertical Resolution "
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    60
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "8"
+		    Cell		    "12"
+		    Cell		    "16"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "vertres"
+		    Prompt		    "Vertical Resolution: No. of bits"
+		    Value		    "12"
+		  }
+		  Object {
+		    $ObjectID		    61
+		    Type		    "edit"
+		    Name		    "xmax"
+		    Prompt		    "Vertical Resolution: signal range"
+		    Value		    "10"
+		  }
+		  Object {
+		    $ObjectID		    62
+		    Type		    "edit"
+		    Name		    "winsize"
+		    Prompt		    "Window size"
+		    Value		    "40"
+		  }
+		  Object {
+		    $ObjectID		    63
+		    Type		    "edit"
+		    Name		    "G"
+		    Prompt		    "Gain"
+		    Value		    "1.0"
+		  }
+		  Object {
+		    $ObjectID		    64
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frequency"
+		    Value		    "60*40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"DAB1"
+		Location		[16, 52, 876, 793]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "a"
+		  SID			  "73"
+		  Position		  [15, 78, 45, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "A-D & Buffer"
+		  SID			  "74"
+		  Ports			  [1, 1]
+		  Position		  [275, 70, 335, 100]
+		  ZOrder		  -2
+		  FunctionName		  "dab2"
+		  Parameters		  "winsize,fs,dx,resdis"
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Analog Filter"
+		  SID			  "75"
+		  Position		  [70, 67, 125, 103]
+		  ZOrder		  -3
+		  Numerator		  "num"
+		  Denominator		  "den"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "76"
+		  Position		  [145, 70, 175, 100]
+		  ZOrder		  -4
+		  Gain			  "G"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold"
+		  SID			  "77"
+		  Position		  [210, 70, 240, 100]
+		  ZOrder		  -5
+		  SampleTime		  "1/fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "d"
+		  SID			  "78"
+		  Position		  [360, 78, 390, 92]
+		  ZOrder		  -6
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "[zeros(winsize,1)]"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "A-D & Buffer"
+		  SrcPort		  1
+		  DstBlock		  "d"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "a"
+		  SrcPort		  1
+		  DstBlock		  "Analog Filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Zero-Order\nHold"
+		  SrcPort		  1
+		  DstBlock		  "A-D & Buffer"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Analog Filter"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "DAB2"
+	      SID		      "79"
+	      Ports		      [1, 1]
+	      Position		      [155, 146, 200, 174]
+	      ZOrder		      -4
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		65
+		$ClassName		"Simulink.Mask"
+		Type			"Data Adquisition Board"
+		Description		"Performs analog filtering, signal conditioning and sampling. A single signal is the input, a buffer wi"
+		"th the signal samples is the output. The options include analog filter enable/disable switch, type, order and cut-of"
+		"f frequency of the analog filter, conditioning gain, sampling frequency, number of bits, the length of the buffer."
+		Help			"web(['file:///' which('dab.html')]);"
+		Initialization		"dab1"
+		Display			"disp('DAB')"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  12
+		  Object {
+		    $ObjectID		    66
+		    Type		    "checkbox"
+		    Name		    "filter"
+		    Prompt		    "Disable Analog Filter"
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    67
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    4
+		    Cell		    "Bessel"
+		    Cell		    "Tschebyscheff"
+		    Cell		    "Butterworth"
+		    Cell		    "free expression"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "approx"
+		    Prompt		    "Filter approximation"
+		    Value		    "Bessel"
+		  }
+		  Object {
+		    $ObjectID		    68
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "2"
+		    Cell		    "3"
+		    Cell		    "4"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "order"
+		    Prompt		    "Order"
+		    Value		    "2"
+		  }
+		  Object {
+		    $ObjectID		    69
+		    Type		    "edit"
+		    Name		    "numerator"
+		    Prompt		    "Free expression filter: numerator(descending order of s)"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    70
+		    Type		    "edit"
+		    Name		    "denominator"
+		    Prompt		    "Free expression filter: denominator:"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    71
+		    Type		    "edit"
+		    Name		    "freq"
+		    Prompt		    "Cut-off frequency"
+		    Value		    "180"
+		  }
+		  Object {
+		    $ObjectID		    72
+		    Type		    "checkbox"
+		    Name		    "resdis"
+		    Prompt		    "Disable Vertical Resolution "
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    73
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "8"
+		    Cell		    "12"
+		    Cell		    "16"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "vertres"
+		    Prompt		    "Vertical Resolution: No. of bits"
+		    Value		    "12"
+		  }
+		  Object {
+		    $ObjectID		    74
+		    Type		    "edit"
+		    Name		    "xmax"
+		    Prompt		    "Vertical Resolution: signal range"
+		    Value		    "10"
+		  }
+		  Object {
+		    $ObjectID		    75
+		    Type		    "edit"
+		    Name		    "winsize"
+		    Prompt		    "Window size"
+		    Value		    "40"
+		  }
+		  Object {
+		    $ObjectID		    76
+		    Type		    "edit"
+		    Name		    "G"
+		    Prompt		    "Gain"
+		    Value		    "1.0"
+		  }
+		  Object {
+		    $ObjectID		    77
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frequency"
+		    Value		    "60*40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"DAB2"
+		Location		[16, 52, 876, 793]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "a"
+		  SID			  "80"
+		  Position		  [15, 78, 45, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "A-D & Buffer"
+		  SID			  "81"
+		  Ports			  [1, 1]
+		  Position		  [275, 70, 335, 100]
+		  ZOrder		  -2
+		  FunctionName		  "dab2"
+		  Parameters		  "winsize,fs,dx,resdis"
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Analog Filter"
+		  SID			  "82"
+		  Position		  [70, 67, 125, 103]
+		  ZOrder		  -3
+		  Numerator		  "num"
+		  Denominator		  "den"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "83"
+		  Position		  [145, 70, 175, 100]
+		  ZOrder		  -4
+		  Gain			  "G"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold"
+		  SID			  "84"
+		  Position		  [210, 70, 240, 100]
+		  ZOrder		  -5
+		  SampleTime		  "1/fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "d"
+		  SID			  "85"
+		  Position		  [360, 78, 390, 92]
+		  ZOrder		  -6
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "[zeros(winsize,1)]"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "A-D & Buffer"
+		  SrcPort		  1
+		  DstBlock		  "d"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "a"
+		  SrcPort		  1
+		  DstBlock		  "Analog Filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Zero-Order\nHold"
+		  SrcPort		  1
+		  DstBlock		  "A-D & Buffer"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Analog Filter"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "86"
+	      Ports		      [1, 3]
+	      Position		      [80, 87, 115, 123]
+	      ZOrder		      -5
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      SID		      "87"
+	      Position		      [295, 220, 325, 250]
+	      ZOrder		      -6
+	      Gain		      "1/3"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "88"
+	      Ports		      [3, 1]
+	      Position		      [320, 87, 355, 123]
+	      ZOrder		      -7
+	      Inputs		      "3"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC"
+	      SID		      "89"
+	      Ports		      [1, 1]
+	      Position		      [255, 27, 295, 63]
+	      ZOrder		      -8
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		78
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    79
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    80
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    81
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    82
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    83
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "90"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "91"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "92"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "93"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "94"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC1"
+	      SID		      "95"
+	      Ports		      [1, 1]
+	      Position		      [255, 87, 295, 123]
+	      ZOrder		      -9
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		84
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    85
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    86
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    87
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    88
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    89
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC1"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "96"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "97"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "98"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "99"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "100"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC2"
+	      SID		      "101"
+	      Ports		      [1, 1]
+	      Position		      [255, 142, 295, 178]
+	      ZOrder		      -10
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		90
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    91
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    92
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    93
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    94
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    95
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC2"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "102"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "103"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "104"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "105"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "106"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC3"
+	      SID		      "107"
+	      Ports		      [1, 1]
+	      Position		      [345, 217, 385, 253]
+	      ZOrder		      -11
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		96
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    97
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    98
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    99
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    100
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    101
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC3"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "108"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "109"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "110"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "111"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "112"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      SID		      "113"
+	      Ports		      [3, 1]
+	      Position		      [245, 219, 275, 251]
+	      ZOrder		      -12
+	      Inputs		      "+++"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IABC"
+	      SID		      "114"
+	      Position		      [380, 98, 410, 112]
+	      ZOrder		      -13
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "I0"
+	      SID		      "115"
+	      Position		      [410, 228, 440, 242]
+	      ZOrder		      -14
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      DstBlock		      "DAB"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "DAB1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [20, 0]
+	      DstBlock		      "DAB2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "IABC,sec"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "OC1"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "OC"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "OC2"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "IABC"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "DAB2"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		ZOrder			10
+		DstBlock		"OC2"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			11
+		DstBlock		"Sum"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "DAB1"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		ZOrder			13
+		DstBlock		"OC1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			14
+		Points			[0, 130]
+		DstBlock		"Sum"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "DAB"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		ZOrder			16
+		DstBlock		"OC"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			17
+		Points			[0, 200]
+		DstBlock		"Sum"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "OC3"
+	      SrcPort		      1
+	      DstBlock		      "I0"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "OC3"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "DAB+OC V"
+	  SID			  "116"
+	  Ports			  [1, 2]
+	  Position		  [90, 145, 140, 205]
+	  ZOrder		  -4
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "DAB+OC V"
+	    Location		    [332, 110, 900, 667]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VABC,sec"
+	      SID		      "117"
+	      Position		      [25, 98, 55, 112]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "DAB"
+	      SID		      "118"
+	      Ports		      [1, 1]
+	      Position		      [150, 31, 195, 59]
+	      ZOrder		      -2
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		102
+		$ClassName		"Simulink.Mask"
+		Type			"Data Adquisition Board"
+		Description		"Performs analog filtering, signal conditioning and sampling. A single signal is the input, a buffer wi"
+		"th the signal samples is the output. The options include analog filter enable/disable switch, type, order and cut-of"
+		"f frequency of the analog filter, conditioning gain, sampling frequency, number of bits, the length of the buffer."
+		Help			"web(['file:///' which('dab.html')]);"
+		Initialization		"dab1"
+		Display			"disp('DAB')"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  12
+		  Object {
+		    $ObjectID		    103
+		    Type		    "checkbox"
+		    Name		    "filter"
+		    Prompt		    "Disable Analog Filter"
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    104
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    4
+		    Cell		    "Bessel"
+		    Cell		    "Tschebyscheff"
+		    Cell		    "Butterworth"
+		    Cell		    "free expression"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "approx"
+		    Prompt		    "Filter approximation"
+		    Value		    "Bessel"
+		  }
+		  Object {
+		    $ObjectID		    105
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "2"
+		    Cell		    "3"
+		    Cell		    "4"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "order"
+		    Prompt		    "Order"
+		    Value		    "2"
+		  }
+		  Object {
+		    $ObjectID		    106
+		    Type		    "edit"
+		    Name		    "numerator"
+		    Prompt		    "Free expression filter: numerator(descending order of s)"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    107
+		    Type		    "edit"
+		    Name		    "denominator"
+		    Prompt		    "Free expression filter: denominator:"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    108
+		    Type		    "edit"
+		    Name		    "freq"
+		    Prompt		    "Cut-off frequency"
+		    Value		    "180"
+		  }
+		  Object {
+		    $ObjectID		    109
+		    Type		    "checkbox"
+		    Name		    "resdis"
+		    Prompt		    "Disable Vertical Resolution "
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    110
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "8"
+		    Cell		    "12"
+		    Cell		    "16"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "vertres"
+		    Prompt		    "Vertical Resolution: No. of bits"
+		    Value		    "12"
+		  }
+		  Object {
+		    $ObjectID		    111
+		    Type		    "edit"
+		    Name		    "xmax"
+		    Prompt		    "Vertical Resolution: signal range"
+		    Value		    "10"
+		  }
+		  Object {
+		    $ObjectID		    112
+		    Type		    "edit"
+		    Name		    "winsize"
+		    Prompt		    "Window size"
+		    Value		    "40"
+		  }
+		  Object {
+		    $ObjectID		    113
+		    Type		    "edit"
+		    Name		    "G"
+		    Prompt		    "Gain"
+		    Value		    "1.0"
+		  }
+		  Object {
+		    $ObjectID		    114
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frequency"
+		    Value		    "60*40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"DAB"
+		Location		[16, 52, 876, 793]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "a"
+		  SID			  "119"
+		  Position		  [15, 78, 45, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "A-D & Buffer"
+		  SID			  "120"
+		  Ports			  [1, 1]
+		  Position		  [275, 70, 335, 100]
+		  ZOrder		  -2
+		  FunctionName		  "dab2"
+		  Parameters		  "winsize,fs,dx,resdis"
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Analog Filter"
+		  SID			  "121"
+		  Position		  [70, 67, 125, 103]
+		  ZOrder		  -3
+		  Numerator		  "num"
+		  Denominator		  "den"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "122"
+		  Position		  [145, 70, 175, 100]
+		  ZOrder		  -4
+		  Gain			  "G"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold"
+		  SID			  "123"
+		  Position		  [210, 70, 240, 100]
+		  ZOrder		  -5
+		  SampleTime		  "1/fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "d"
+		  SID			  "124"
+		  Position		  [360, 78, 390, 92]
+		  ZOrder		  -6
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "[zeros(winsize,1)]"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "A-D & Buffer"
+		  SrcPort		  1
+		  DstBlock		  "d"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "a"
+		  SrcPort		  1
+		  DstBlock		  "Analog Filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Zero-Order\nHold"
+		  SrcPort		  1
+		  DstBlock		  "A-D & Buffer"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Analog Filter"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "DAB1"
+	      SID		      "125"
+	      Ports		      [1, 1]
+	      Position		      [150, 91, 195, 119]
+	      ZOrder		      -3
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		115
+		$ClassName		"Simulink.Mask"
+		Type			"Data Adquisition Board"
+		Description		"Performs analog filtering, signal conditioning and sampling. A single signal is the input, a buffer wi"
+		"th the signal samples is the output. The options include analog filter enable/disable switch, type, order and cut-of"
+		"f frequency of the analog filter, conditioning gain, sampling frequency, number of bits, the length of the buffer."
+		Help			"web(['file:///' which('dab.html')]);"
+		Initialization		"dab1"
+		Display			"disp('DAB')"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  12
+		  Object {
+		    $ObjectID		    116
+		    Type		    "checkbox"
+		    Name		    "filter"
+		    Prompt		    "Disable Analog Filter"
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    117
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    4
+		    Cell		    "Bessel"
+		    Cell		    "Tschebyscheff"
+		    Cell		    "Butterworth"
+		    Cell		    "free expression"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "approx"
+		    Prompt		    "Filter approximation"
+		    Value		    "Bessel"
+		  }
+		  Object {
+		    $ObjectID		    118
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "2"
+		    Cell		    "3"
+		    Cell		    "4"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "order"
+		    Prompt		    "Order"
+		    Value		    "2"
+		  }
+		  Object {
+		    $ObjectID		    119
+		    Type		    "edit"
+		    Name		    "numerator"
+		    Prompt		    "Free expression filter: numerator(descending order of s)"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    120
+		    Type		    "edit"
+		    Name		    "denominator"
+		    Prompt		    "Free expression filter: denominator:"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    121
+		    Type		    "edit"
+		    Name		    "freq"
+		    Prompt		    "Cut-off frequency"
+		    Value		    "180"
+		  }
+		  Object {
+		    $ObjectID		    122
+		    Type		    "checkbox"
+		    Name		    "resdis"
+		    Prompt		    "Disable Vertical Resolution "
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    123
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "8"
+		    Cell		    "12"
+		    Cell		    "16"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "vertres"
+		    Prompt		    "Vertical Resolution: No. of bits"
+		    Value		    "12"
+		  }
+		  Object {
+		    $ObjectID		    124
+		    Type		    "edit"
+		    Name		    "xmax"
+		    Prompt		    "Vertical Resolution: signal range"
+		    Value		    "10"
+		  }
+		  Object {
+		    $ObjectID		    125
+		    Type		    "edit"
+		    Name		    "winsize"
+		    Prompt		    "Window size"
+		    Value		    "40"
+		  }
+		  Object {
+		    $ObjectID		    126
+		    Type		    "edit"
+		    Name		    "G"
+		    Prompt		    "Gain"
+		    Value		    "1.0"
+		  }
+		  Object {
+		    $ObjectID		    127
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frequency"
+		    Value		    "60*40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"DAB1"
+		Location		[16, 52, 876, 793]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "a"
+		  SID			  "126"
+		  Position		  [15, 78, 45, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "A-D & Buffer"
+		  SID			  "127"
+		  Ports			  [1, 1]
+		  Position		  [275, 70, 335, 100]
+		  ZOrder		  -2
+		  FunctionName		  "dab2"
+		  Parameters		  "winsize,fs,dx,resdis"
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Analog Filter"
+		  SID			  "128"
+		  Position		  [70, 67, 125, 103]
+		  ZOrder		  -3
+		  Numerator		  "num"
+		  Denominator		  "den"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "129"
+		  Position		  [145, 70, 175, 100]
+		  ZOrder		  -4
+		  Gain			  "G"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold"
+		  SID			  "130"
+		  Position		  [210, 70, 240, 100]
+		  ZOrder		  -5
+		  SampleTime		  "1/fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "d"
+		  SID			  "131"
+		  Position		  [360, 78, 390, 92]
+		  ZOrder		  -6
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "[zeros(winsize,1)]"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "A-D & Buffer"
+		  SrcPort		  1
+		  DstBlock		  "d"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "a"
+		  SrcPort		  1
+		  DstBlock		  "Analog Filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Zero-Order\nHold"
+		  SrcPort		  1
+		  DstBlock		  "A-D & Buffer"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Analog Filter"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "DAB2"
+	      SID		      "132"
+	      Ports		      [1, 1]
+	      Position		      [150, 146, 195, 174]
+	      ZOrder		      -4
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		128
+		$ClassName		"Simulink.Mask"
+		Type			"Data Adquisition Board"
+		Description		"Performs analog filtering, signal conditioning and sampling. A single signal is the input, a buffer wi"
+		"th the signal samples is the output. The options include analog filter enable/disable switch, type, order and cut-of"
+		"f frequency of the analog filter, conditioning gain, sampling frequency, number of bits, the length of the buffer."
+		Help			"web(['file:///' which('dab.html')]);"
+		Initialization		"dab1"
+		Display			"disp('DAB')"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  12
+		  Object {
+		    $ObjectID		    129
+		    Type		    "checkbox"
+		    Name		    "filter"
+		    Prompt		    "Disable Analog Filter"
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    130
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    4
+		    Cell		    "Bessel"
+		    Cell		    "Tschebyscheff"
+		    Cell		    "Butterworth"
+		    Cell		    "free expression"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "approx"
+		    Prompt		    "Filter approximation"
+		    Value		    "Bessel"
+		  }
+		  Object {
+		    $ObjectID		    131
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "2"
+		    Cell		    "3"
+		    Cell		    "4"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "order"
+		    Prompt		    "Order"
+		    Value		    "2"
+		  }
+		  Object {
+		    $ObjectID		    132
+		    Type		    "edit"
+		    Name		    "numerator"
+		    Prompt		    "Free expression filter: numerator(descending order of s)"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    133
+		    Type		    "edit"
+		    Name		    "denominator"
+		    Prompt		    "Free expression filter: denominator:"
+		    Value		    "[]"
+		  }
+		  Object {
+		    $ObjectID		    134
+		    Type		    "edit"
+		    Name		    "freq"
+		    Prompt		    "Cut-off frequency"
+		    Value		    "180"
+		  }
+		  Object {
+		    $ObjectID		    135
+		    Type		    "checkbox"
+		    Name		    "resdis"
+		    Prompt		    "Disable Vertical Resolution "
+		    Value		    "off"
+		  }
+		  Object {
+		    $ObjectID		    136
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "8"
+		    Cell		    "12"
+		    Cell		    "16"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "vertres"
+		    Prompt		    "Vertical Resolution: No. of bits"
+		    Value		    "12"
+		  }
+		  Object {
+		    $ObjectID		    137
+		    Type		    "edit"
+		    Name		    "xmax"
+		    Prompt		    "Vertical Resolution: signal range"
+		    Value		    "10"
+		  }
+		  Object {
+		    $ObjectID		    138
+		    Type		    "edit"
+		    Name		    "winsize"
+		    Prompt		    "Window size"
+		    Value		    "40"
+		  }
+		  Object {
+		    $ObjectID		    139
+		    Type		    "edit"
+		    Name		    "G"
+		    Prompt		    "Gain"
+		    Value		    "1.0"
+		  }
+		  Object {
+		    $ObjectID		    140
+		    Type		    "edit"
+		    Name		    "fs"
+		    Prompt		    "Sampling frequency"
+		    Value		    "60*40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"DAB2"
+		Location		[16, 52, 876, 793]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "a"
+		  SID			  "133"
+		  Position		  [15, 78, 45, 92]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "A-D & Buffer"
+		  SID			  "134"
+		  Ports			  [1, 1]
+		  Position		  [275, 70, 335, 100]
+		  ZOrder		  -2
+		  FunctionName		  "dab2"
+		  Parameters		  "winsize,fs,dx,resdis"
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Analog Filter"
+		  SID			  "135"
+		  Position		  [70, 67, 125, 103]
+		  ZOrder		  -3
+		  Numerator		  "num"
+		  Denominator		  "den"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "136"
+		  Position		  [145, 70, 175, 100]
+		  ZOrder		  -4
+		  Gain			  "G"
+		}
+		Block {
+		  BlockType		  ZeroOrderHold
+		  Name			  "Zero-Order\nHold"
+		  SID			  "137"
+		  Position		  [210, 70, 240, 100]
+		  ZOrder		  -5
+		  SampleTime		  "1/fs"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "d"
+		  SID			  "138"
+		  Position		  [360, 78, 390, 92]
+		  ZOrder		  -6
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "[zeros(winsize,1)]"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "A-D & Buffer"
+		  SrcPort		  1
+		  DstBlock		  "d"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "a"
+		  SrcPort		  1
+		  DstBlock		  "Analog Filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "Zero-Order\nHold"
+		  SrcPort		  1
+		  DstBlock		  "A-D & Buffer"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "Zero-Order\nHold"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  5
+		  SrcBlock		  "Analog Filter"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "139"
+	      Ports		      [1, 3]
+	      Position		      [80, 87, 115, 123]
+	      ZOrder		      -5
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "140"
+	      Ports		      [3, 1]
+	      Position		      [365, 87, 400, 123]
+	      ZOrder		      -6
+	      Inputs		      "3"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux1"
+	      SID		      "141"
+	      Ports		      [3, 1]
+	      Position		      [380, 257, 415, 293]
+	      ZOrder		      -7
+	      Inputs		      "3"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC"
+	      SID		      "142"
+	      Ports		      [1, 1]
+	      Position		      [270, 27, 310, 63]
+	      ZOrder		      -8
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		141
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    142
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    143
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    144
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    145
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    146
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "143"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "144"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "145"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "146"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "147"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC1"
+	      SID		      "148"
+	      Ports		      [1, 1]
+	      Position		      [270, 87, 310, 123]
+	      ZOrder		      -9
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		147
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    148
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    149
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    150
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    151
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    152
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC1"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "149"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "150"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "151"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "152"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "153"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC2"
+	      SID		      "154"
+	      Ports		      [1, 1]
+	      Position		      [270, 142, 310, 178]
+	      ZOrder		      -10
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		153
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    154
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    155
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    156
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    157
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    158
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC2"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "155"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "156"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "157"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "158"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "159"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC3"
+	      SID		      "160"
+	      Ports		      [1, 1]
+	      Position		      [305, 197, 345, 233]
+	      ZOrder		      -11
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		159
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    160
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    161
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    162
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    163
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    164
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC3"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "161"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "162"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "163"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "164"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "165"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC4"
+	      SID		      "166"
+	      Ports		      [1, 1]
+	      Position		      [305, 257, 345, 293]
+	      ZOrder		      -12
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		165
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    166
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    167
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    168
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    169
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    170
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC4"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "167"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "168"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "169"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "170"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "171"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "OC5"
+	      SID		      "172"
+	      Ports		      [1, 1]
+	      Position		      [305, 312, 345, 348]
+	      ZOrder		      -13
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		171
+		$ClassName		"Simulink.Mask"
+		Type			"Orthogonal Components"
+		Description		"The block captures the data window of a sampled signal and computes the orthogonal components of the s"
+		"ignal, i.e. amplitude and angle. The pre-defined filters include Fourier and Walsh functions. The free expression fi"
+		"lters may also be used. Note: The type of data window affects only the Fourier filter."
+		Help			"This block take the date as its input window of the sampled signal, and convert it into a single orthogonal "
+		"output. The output values are direct and quadrature orthogonal components of signal at the present sampling instant."
+		"\nThe options of the block include type and data window length of pre-defined filters and user-defined filters."
+		Initialization		"oc2;"
+		Display			"disp(DIFI);"
+		IconOpaque		"off"
+		Array {
+		  Type			  "Simulink.MaskParameter"
+		  Dimension		  5
+		  Object {
+		    $ObjectID		    172
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    3
+		    Cell		    "Fourier"
+		    Cell		    "Walsh"
+		    Cell		    "User Defined"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tfilt"
+		    Prompt		    "Type of filter:"
+		    Value		    "Fourier"
+		  }
+		  Object {
+		    $ObjectID		    173
+		    Type		    "edit"
+		    Name		    "rfilt"
+		    Prompt		    "Direct filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    174
+		    Type		    "edit"
+		    Name		    "ifilt"
+		    Prompt		    "Quadrature filter"
+		    Value		    "[ ]"
+		  }
+		  Object {
+		    $ObjectID		    175
+		    Type		    "popup"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    2
+		    Cell		    "half"
+		    Cell		    "full"
+		    PropName		    "TypeOptions"
+		    }
+		    Name		    "tlen"
+		    Prompt		    "Type of data window"
+		    Value		    "half"
+		  }
+		  Object {
+		    $ObjectID		    176
+		    Type		    "edit"
+		    Name		    "N1"
+		    Prompt		    "Number of samples per cycle:"
+		    Value		    "40"
+		  }
+		  PropName		  "Parameters"
+		}
+	      }
+	      System {
+		Name			"OC5"
+		Location		[163, 173, 560, 499]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "x"
+		  SID			  "173"
+		  Position		  [25, 50, 45, 70]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  "OC filter"
+		  SID			  "174"
+		  Ports			  [1, 1]
+		  Position		  [115, 41, 170, 79]
+		  ZOrder		  -2
+		  FunctionName		  "oc1"
+		  Parameters		  "tfilt, rfilt, ifilt, tlen, N1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "dq"
+		  SID			  "175"
+		  Position		  [265, 50, 285, 70]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		  InitialOutput		  "0"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "x"
+		  SrcPort		  1
+		  DstBlock		  "OC filter"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "OC filter"
+		  SrcPort		  1
+		  DstBlock		  "dq"
+		  DstPort		  1
+		}
+		Annotation {
+		  SID			  "176"
+		  Name			  "v(t) is a vector\nwith width N1"
+		  Position		  [54, 108, 120, 136]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -1
+		}
+		Annotation {
+		  SID			  "177"
+		  Name			  "v_ort is \na complex number"
+		  Position		  [254, 105, 344, 133]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedHeight		  off
+		  FixedWidth		  off
+		  ZOrder		  -2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Vab"
+	      SID		      "178"
+	      Ports		      [2, 1]
+	      Position		      [255, 199, 270, 226]
+	      ZOrder		      -14
+	      Inputs		      "+-"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Vbc"
+	      SID		      "179"
+	      Ports		      [2, 1]
+	      Position		      [255, 244, 270, 271]
+	      ZOrder		      -15
+	      Inputs		      "+-"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Vca"
+	      SID		      "180"
+	      Ports		      [2, 1]
+	      Position		      [255, 289, 270, 316]
+	      ZOrder		      -16
+	      Inputs		      "+-"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Vphase"
+	      SID		      "181"
+	      Position		      [435, 98, 465, 112]
+	      ZOrder		      -17
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Vline"
+	      SID		      "182"
+	      Position		      [455, 268, 485, 282]
+	      ZOrder		      -18
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      DstBlock		      "DAB"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "DAB1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [15, 0]
+	      DstBlock		      "DAB2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "VABC,sec"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "DAB"
+	      SrcPort		      1
+	      Points		      [40, 0]
+	      Branch {
+		ZOrder			6
+		DstBlock		"OC"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			7
+		Points			[0, 160]
+		Branch {
+		  ZOrder		  8
+		  DstBlock		  "Vab"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  9
+		  DstBlock		  "Vca"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "DAB1"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		ZOrder			11
+		DstBlock		"OC1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			12
+		Points			[0, 110]
+		Branch {
+		  ZOrder		  13
+		  Points		  [0, 5]
+		  DstBlock		  "Vab"
+		  DstPort		  2
+		}
+		Branch {
+		  ZOrder		  14
+		  Points		  [0, 35]
+		  DstBlock		  "Vbc"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "DAB2"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		ZOrder			16
+		DstBlock		"OC2"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			17
+		Points			[0, 100]
+		Branch {
+		  ZOrder		  18
+		  Points		  [0, 5]
+		  DstBlock		  "Vbc"
+		  DstPort		  2
+		}
+		Branch {
+		  ZOrder		  19
+		  Points		  [0, 35]
+		  DstBlock		  "Vca"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "Vab"
+	      SrcPort		      1
+	      DstBlock		      "OC3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      "Vbc"
+	      SrcPort		      1
+	      Points		      [0, 15]
+	      DstBlock		      "OC4"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      22
+	      SrcBlock		      "Vca"
+	      SrcPort		      1
+	      Points		      [0, 25]
+	      DstBlock		      "OC5"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      23
+	      SrcBlock		      "OC1"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      24
+	      SrcBlock		      "OC"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 50]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      25
+	      SrcBlock		      "OC2"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -45]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      26
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Vphase"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      27
+	      SrcBlock		      "Mux1"
+	      SrcPort		      1
+	      DstBlock		      "Vline"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      28
+	      SrcBlock		      "OC4"
+	      SrcPort		      1
+	      DstBlock		      "Mux1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      29
+	      SrcBlock		      "OC3"
+	      SrcPort		      1
+	      Points		      [0, 50]
+	      DstBlock		      "Mux1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      30
+	      SrcBlock		      "OC5"
+	      SrcPort		      1
+	      Points		      [0, -45]
+	      DstBlock		      "Mux1"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  "183"
+	  Position		  [165, 150, 185, 170]
+	  ZOrder		  -5
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IABC"
+	  SID			  "184"
+	  Position		  [165, 38, 195, 52]
+	  ZOrder		  -6
+	  IconDisplay		  "Port number"
+	  InitialOutput		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "I0"
+	  SID			  "185"
+	  Position		  [165, 68, 195, 82]
+	  ZOrder		  -7
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  InitialOutput		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vline"
+	  SID			  "186"
+	  Position		  [165, 183, 195, 197]
+	  ZOrder		  -8
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "IABC,sec"
+	  SrcPort		  1
+	  DstBlock		  "DAB+OC I"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "VABC,sec"
+	  SrcPort		  1
+	  DstBlock		  "DAB+OC V"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "DAB+OC V"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "DAB+OC I"
+	  SrcPort		  1
+	  DstBlock		  "IABC"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "DAB+OC I"
+	  SrcPort		  2
+	  DstBlock		  "I0"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "DAB+OC V"
+	  SrcPort		  2
+	  DstBlock		  "Vline"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

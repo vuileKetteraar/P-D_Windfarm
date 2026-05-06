@@ -1,0 +1,568 @@
+Library {
+  Name			  "inputs"
+  Version		  3.00
+  BlockDataTips		  on
+  BlockParametersDataTip  on
+  BlockAttributesDataTip  off
+  BlockPortWidthsDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockMaskParametersDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Jan 19 20:58:37 2000"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Jan 19 21:01:05 2000"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "none"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "inputs"
+    Location		    [167, 312, 712, 434]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Analytical \nGenerator"
+      Ports		      [0, 1, 0, 0, 0]
+      Position		      [35, 12, 90, 68]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      MaskType		      "Analytical Generator"
+      MaskDescription	      "Generates any signal by providing the equation "
+"describing the output value. The time variable must be named tx. The start-up"
+" time must be specified."
+      MaskHelp		      "web(['file:///' which('agdoc.html')]);\n"
+      MaskPromptString	      "Generated function|Start-up time [sec]"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskVariables	      "y=&1;to=@2;"
+      MaskInitialization      "t = 0:0.001:0.1;\n\nfor i = 1:length(t)\n  if t"
+"(i) < to\n    x(i) = 0;\n  else\n    tx = t(i) - to;\n    x(i) =  eval(y);\n "
+" end\nend\n"
+      MaskDisplay	      "plot(t,x);"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "10*cos(2*pi*60*tx)|1/60"
+      System {
+	Name			"Analytical \nGenerator"
+	Location		[72, 349, 350, 515]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [0, 1, 0, 0, 0]
+	  Position		  [65, 62, 125, 108]
+	  FunctionName		  "ag1"
+	  Parameters		  "y,to"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "      \n       "
+	  Position		  [185, 78, 215, 92]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "      \n       "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Fault Signal"
+      Ports		      [0, 2, 0, 0, 0]
+      Position		      [450, 15, 515, 75]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      MaskType		      "Fault Signal Generator"
+      MaskDescription	      "Generates a signal which evolves from a given p"
+"re-fault phasor to a given post-fault phasor. A limited number of decaying hi"
+"gh frequency components are included. The d.c. component is also included. Th"
+"e start-up time may be specified."
+      MaskHelp		      "web(['file:///' which('fsgdoc.html')]);\n"
+      MaskPromptString	      "Pre-fault amplitude and phase [degrees]|Fault a"
+"mplitude and phase [degrees]|Frequency [Hz], fault time and DC time constant|"
+"Amplitudes of the oscillatory components|Frequencies of the oscillatory compo"
+"nents|Time constants of the oscillatory components"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskVariables	      "pre_fault=@1;post_fault=@2;fr_dc=@3;oscA=@4;osc"
+"f=@5;oscT=@6;"
+      MaskInitialization      "tx=0:4*fr_dc(2)/100:4*fr_dc(2);\nout(1:26)=pre_"
+"fault(1)*cos(2*pi*fr_dc(1)*tx(1:26)+pre_fault(2)*pi/180);\na=out(26);\nout(26"
+":101)=post_fault(1)*cos(2*pi*fr_dc(1)*tx(26:101)+post_fault(2)*pi/180);\nAdc="
+"a-out(26);\nfor  k = 26:101\n      wt=2.*pi.*(tx(k)-fr_dc(2)).*oscf;\n      o"
+"sc(k)=sum(oscA.*exp(-(tx(k)-fr_dc(2))./oscT).*sin(wt));\nend\nout(26:101)=out"
+"(26:101)+Adc*exp(-(tx(26:101)-fr_dc(2))/fr_dc(3))+osc(26:101);\n\n"
+      MaskDisplay	      "plot(tx,out);"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[10 45]|[2 90]|[60 1.25/60 0.0004]|[1.0 0.8 0.9"
+"]|[1000 3000 8000]|[0.050 0.030 0.060]"
+      System {
+	Name			"Fault Signal"
+	Location		[159, 52, 479, 241]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [0, 1, 0, 0, 0]
+	  Position		  [80, 35, 140, 75]
+	  FunctionName		  "fsg1"
+	  Parameters		  "pre_fault,post_fault,fr_dc,oscA,oscf,oscT"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Time"
+	  Position		  [80, 109, 135, 151]
+	  Time			  "fr_dc(2)"
+	  Before		  "0"
+	  After			  "1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "\n"
+	  Position		  [230, 45, 260, 65]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "t"
+	  Position		  [230, 120, 260, 140]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Time"
+	  SrcPort		  1
+	  DstBlock		  "t"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "\n"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [246, 73]
+	  Text			  "S"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Phasor\n Generator"
+      Ports		      [0, 2, 0, 0, 0]
+      Position		      [240, 16, 295, 74]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      MaskType		      "Phasor Generator"
+      MaskDescription	      "Generates a pure sinusoid waveform. The paramet"
+"ers of the output signal that have to be specified include amplitude, phase a"
+"nd frequency as well as the start-up time.."
+      MaskHelp		      "web(['file:///' which('pgdoc.html')]);\n"
+      MaskPromptString	      "Phasor   [amplitude, phase in degree]|Frequency"
+" [Hz]|Start time [sec]"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskVariables	      "phase1=@1;f=@2;to=@3;"
+      MaskInitialization      "xo  = 0;\nyo  = 0;\nAmax = abs(phase1(1));\nx1 "
+"= phase1(1)*cos(phase1(2)*pi/180);\ny1 = phase1(1)*sin(phase1(2)*pi/180);\n"
+      MaskDisplay	      "plot([0 0], [ 0  Amax/8]);\nplot([0 0], [3*Amax"
+"/8 5*Amax/8]);\nplot([0 0], [7*Amax/8 Amax]);\nplot([0 0], [0 -Amax/8]);\nplo"
+"t([0 0], [-3*Amax/8 -5*Amax/8]);\nplot([0 0], [-7*Amax/8 -Amax]);\n\nplot([ 0"
+"  Amax/8], [0 0]);\nplot([3*Amax/8 5*Amax/8], [0 0]);\nplot([7*Amax/8 Amax], "
+"[0 0]);\nplot([0 -Amax/8], [0 0]);\nplot([-3*Amax/8 -5*Amax/8], [ 0 0]);\nplo"
+"t([-7*Amax/8 -Amax], [0 0]);\n\nplot([xo x1], [yo y1]);\n\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[10 45]|60|1.25/60"
+      System {
+	Name			"Phasor\n Generator"
+	Location		[24, 162, 430, 369]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [0, 1, 0, 0, 0]
+	  Position		  [125, 43, 185, 97]
+	  FunctionName		  "SPG1"
+	  Parameters		  "phase1,f,to"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Step"
+	  Position		  [135, 145, 165, 175]
+	  Time			  "to"
+	  Before		  "0"
+	  After			  "1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "S"
+	  Position		  [245, 61, 275, 79]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "t"
+	  Position		  [245, 151, 275, 169]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Step"
+	  SrcPort		  1
+	  DstBlock		  "t"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "S"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Spectrum\nGenerator"
+      Ports		      [0, 2, 0, 0, 0]
+      Position		      [135, 14, 195, 81]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      MaskType		      "Spectrum Generator"
+      MaskDescription	      "Generates a signal composed from the limited nu"
+"mber of harmonics and sub-harmonics including the d.c. component. For each si"
+"gnal component, the amplitude, phase and harmonic order are the parameters. T"
+"he start-up time may be specified. The frequency for each component expressed"
+" as multiple of the fundamental frequency is specyfied in the frequency multi"
+"pliers array."
+      MaskHelp		      "web(['file:///' which('scdoc.html')]);\n"
+      MaskPromptString	      "Fundamental frequency [Hz]|Frequency multiplier"
+"s|Amplitudes|Phases [deg]|Start-up time [sec]"
+      MaskStyleString	      "edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on"
+      MaskCallbackString      "||||"
+      MaskEnableString	      "on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on"
+      MaskVariables	      "f=@1;m=@2;A=@3;ph=@4;to=@5;"
+      MaskInitialization      "for i = 1:3:3*length(A)\n   x(i)   = i;\n   x(i"
+"+1) = i;\n   x(i+2) = i;\nend\n\nW = zeros(length(A),3);\nW(:,2) = A';\nW = W"
+"';\nfor i = 1:3*length(A)\n   y(i) = W(i);\nend\n"
+      MaskDisplay	      "plot(x,y);\n\n\n\n\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "60|[0 1/3 1 2 5]|[0.1 0.2 1 0.25 0.15]|[0 0 0 3"
+"0 45]|1/60"
+      System {
+	Name			"Spectrum\nGenerator"
+	Location		[213, 184, 446, 369]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [0, 1, 0, 0, 0]
+	  Position		  [40, 35, 100, 75]
+	  FunctionName		  "sg1"
+	  Parameters		  "f,m,A,ph,to"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Step"
+	  Position		  [45, 104, 85, 136]
+	  Time			  "to"
+	  Before		  "0"
+	  After			  "1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "X"
+	  Position		  [155, 48, 185, 62]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "t"
+	  Position		  [155, 113, 185, 127]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "X"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Step"
+	  SrcPort		  1
+	  DstBlock		  "t"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Three-phase Phasor \n Generator"
+      Ports		      [0, 4, 0, 0, 0]
+      Position		      [340, 13, 405, 72]
+      BackgroundColor	      "lightBlue"
+      ShowPortLabels	      on
+      MaskType		      "Three-phase phasor generator"
+      MaskDescription	      "Generates three pure sinusoid waveforms. The pa"
+"rameters of the output signals to be specified include amplitude and phase fo"
+"r each phasor as well as the frequency and the start-up time. The phasors may"
+" be set either as phase or symmetrical component values."
+      MaskHelp		      "web(['file:///' which('tpgdoc.html')]);\n"
+      MaskPromptString	      "Three-phase phasors |Phasor (A or 0);  [amplitu"
+"de, phase in degree]|Phasor (B or 1);  [amplitude, phase in degree]|Phasor (C"
+" or 2);  [amplitude, phase in degree]|Frequency [Hz]|Start-up time [sec]"
+      MaskStyleString	      "popup(Phase quantities-symmetrical|Phase quanti"
+"ties-unsymmetrical|Symmetrical components),edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskVariables	      "phase_type=@1;phase1=@2;phase2=@3;phase3=@4;f=@"
+"5;to=@6;"
+      MaskInitialization      "TPG2\n"
+      MaskDisplay	      "plot([0 0], [ 0  Amax/8]);\nplot([0 0], [3*Amax"
+"/8 5*Amax/8]);\nplot([0 0], [7*Amax/8 Amax]);\nplot([0 0], [0 -Amax/8]);\nplo"
+"t([0 0], [-3*Amax/8 -5*Amax/8]);\nplot([0 0], [-7*Amax/8 -Amax]);\n\nplot([ 0"
+"  Amax/8], [0 0]);\nplot([3*Amax/8 5*Amax/8], [0 0]);\nplot([7*Amax/8 Amax], "
+"[0 0]);\nplot([0 -Amax/8], [0 0]);\nplot([-3*Amax/8 -5*Amax/8], [ 0 0]);\nplo"
+"t([-7*Amax/8 -Amax], [0 0]);\n\nplot([xo x1], [yo y1], [xo x2], [yo y2], [xo "
+"x3], [yo y3]);\n\n\n\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "Phase quantities-symmetrical|[10 45]|[0 150]|[0"
+" -50]|60|0"
+      System {
+	Name			"Three-phase Phasor \n Generator"
+	Location		[24, 162, 430, 369]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 3, 0, 0, 0]
+	  Position		  [200, 48, 245, 92]
+	  Outputs		  "3"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [0, 1, 0, 0, 0]
+	  Position		  [105, 43, 165, 97]
+	  FunctionName		  "TPG1"
+	  Parameters		  "phase_type,phase1,phase2,phase3,f,to"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Step"
+	  Position		  [135, 145, 165, 175]
+	  Time			  "to"
+	  Before		  "0"
+	  After			  "1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "A"
+	  Position		  [335, 16, 365, 34]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "B"
+	  Position		  [335, 61, 365, 79]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "C"
+	  Position		  [335, 106, 365, 124]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "t"
+	  Position		  [245, 151, 275, 169]
+	  Port			  "4"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Step"
+	  SrcPort		  1
+	  DstBlock		  "t"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [70, 0]
+	  DstBlock		  "A"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  Points		  [70, 0]
+	  DstBlock		  "C"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "B"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}
