@@ -50,9 +50,9 @@ elseif default == 0
     interPosL = 0.34e-3;
     interPosC = 0.29e-006;
     
-    interZeroR = interPosR*2.5;
-    interZeroL = interPosL*2.5;
-    interZeroC = interPosC*2.5;
+    interZeroR = 0.09;
+    interZeroL = 0.0035;
+    interZeroC = 0.064e-006;
     
 %     sub_posCap = 0.005e-006;
 %     sub_zeroCap = 0.0016e-006;
